@@ -1,0 +1,20 @@
+<ruleset name="PSR2">
+    <description>PSR-2 for Laravel Project at Haposoft</description>
+    <file>./app</file>
+    <file>./database</file>
+    <file>./routes</file>
+    <file>./tests</file>
+    <!-- Ignore line ending because different developer may use different OS -->
+    <rule ref="PSR2">
+        <exclude name="Generic.Files.LineEndings"/>
+    </rule>
+    <!-- Ignore missing namespace rule for Laravel 5.2, because this version doesn't need in those files -->
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>./tests</exclude-pattern>
+        <exclude-pattern>./database</exclude-pattern>
+    </rule>
+    <!-- Ignore line length limited because route's name can be long that exceed 120 characters -->
+    <rule ref="Generic.Files.LineLength">
+        <exclude-pattern>./routes</exclude-pattern>
+    </rule>
+</ruleset>
