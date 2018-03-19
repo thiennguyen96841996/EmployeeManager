@@ -19,6 +19,7 @@ class CreateVacationFulltimesTable extends Migration
             $table->text('reason');
             $table->SoftDeletes();
             $table->integer('user_id');
+            $table->integer('status');
             $table->timestamps();
         });
     }

@@ -21,6 +21,7 @@ class CreateVacationParttimesTable extends Migration
             $table->time('end_time');
             $table->SoftDeletes();
             $table->integer('user_id');
+            $table->integer('status');
             $table->timestamps();
         });
     }
