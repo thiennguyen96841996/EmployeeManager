@@ -4,7 +4,7 @@
     Profile
     </h1>
     <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i>Profile</a></li>
+    <li><a href="{{ route('profile.index')}}"><i class="fa fa-dashboard"></i>Profile</a></li>
     <li class="active">Show</li>
     </ol>
 @endsection

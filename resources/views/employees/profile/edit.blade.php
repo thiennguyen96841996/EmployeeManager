@@ -4,7 +4,7 @@
     Profile
     </h1>
     <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i>Profile</a></li>
+    <li><a href="{{ route('profile.index')}}"><i class="fa fa-dashboard"></i>Profile</a></li>
     <li class="active">Edit</li>
     </ol>
 @endsection
@@ -33,11 +33,11 @@
 			  		</div>
 			  		<div class="form-group">
 			    		<label for="birthday">Birthday:</label>
-			    		<input type="date" class="form-control"  name= "birthday" value="{{ $employee->birthday }}">
+			    		<input type="text" class="form-control"  name= "birthday" value="{{ $employee->birthday }}">
 			  		</div>
 			  		<div class="form-group">
 			    		<label for="email">Email:</label>
-			    		<input type="email" class="form-control" name= "email" value="{{ $employee->email }}" readonly="">
+			    		<input type="email" class="form-control" name= "email" value="{{ $employee->email }}" disabled = "">
 			  		</div>
 			  		<div class="form-group">
 						<input type="checkbox" name="changepassword" id="changepassword">
