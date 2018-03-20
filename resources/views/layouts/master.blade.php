@@ -129,6 +129,7 @@
 			<li><a href="#"><i class="fa fa-circle-o"></i> Vacation FullTime</a></li>
 			<li><a href="#"><i class="fa fa-circle-o"></i> Vacation PartTime</a></li>
 			<li><a href="#"><i class="fa fa-circle-o"></i> Employee</a></li>
+			<li><a href="#"><i class="fa fa-circle-o"></i> Salary</a></li>
 		  </ul>
 		</li>
 		<li class="active treeview">
@@ -139,8 +140,8 @@
 			</span>
 		  </a>
 		  <ul class="treeview-menu">
-			<li class="active"><a href="#"><i class="fa fa-circle-o"></i> Vacation FullTime</a></li>
-			<li><a href="#"><i class="fa fa-circle-o"></i> Vacation PartTime</a></li>
+			<li class="active"><a href="#"><i class="fa fa-circle-o"></i>FullTime</a></li>
+			<li><a href="#"><i class="fa fa-circle-o"></i>PartTime</a></li>
 		  </ul>
 		</li>
 		<li class="treeview">
@@ -151,9 +152,6 @@
 			  <i class="fa fa-angle-left pull-right"></i>
 			</span>
 		  </a>
-		  <ul class="treeview-menu">
-			<li><a href="#"><i class="fa fa-circle-o"></i> Create</a></li>
-		  </ul>
 		</li>
 		<li class="treeview">
 		  <a href="#">
