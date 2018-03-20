@@ -29,5 +29,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 });
 
 Route::group(array("prefix"=>"employee","middleware"=>"auth"),function(){
-
+	Route::resource('profile', 'User\ProfileController', ['only' => [
+    	'index', 'edit', 'update'
+	]]);
 });
