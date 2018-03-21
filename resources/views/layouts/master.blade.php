@@ -140,8 +140,8 @@
 			</span>
 		  </a>
 		  <ul class="treeview-menu">
-			<li class="active"><a href="#"><i class="fa fa-circle-o"></i>FullTime</a></li>
-			<li><a href="#"><i class="fa fa-circle-o"></i>PartTime</a></li>
+			<li class="active"><a href="{{ route('vacationfulltime.create') }}"><i class="fa fa-circle-o"></i>FullTime</a></li>
+			<li><a href="{{ route('vacationparttime.create') }}"><i class="fa fa-circle-o"></i>PartTime</a></li>
 		  </ul>
 		</li>
 		<li>

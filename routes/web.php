@@ -46,4 +46,9 @@ Route::group(array("prefix"=>"employee","middleware"=>"auth"),function(){
     Route::get('overtime/statistical', 'User\OvertimeController@statistical')->name('overtime.statistical');
 
     Route::resource('overtime', 'User\OvertimeController');
+
+    Route::resource('vacationfulltime', 'User\VacationFulltimeController',['except' =>['show']]
+    );
+
+    Route::resource('vacationparttime', 'User\VacationParttimeController', ['except' =>['show']]);
 });
