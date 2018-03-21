@@ -50,12 +50,12 @@ class VacationFulltimeController extends Controller
             'name' => $vacation->user->name,
         ];
         $vacation->save();
-        Mail::send('employee.vacation.fulltime.mail', ['data' => $data] , function($message) {
+        Mail::send('employees.vacation.fulltime.mail', ['data' => $data] , function($message) {
         $message->from(Auth::user()->email, Auth::user()->name);
         $message->to('thiennh@haposoft.com', 'Admin');
         $message->subject('Xin nghỉ, đi muộn, về sớm');
         });
-        return redirect()->route('vacationfulltime.create')->with('success',trans('message.create'));
+        return redirect()->route('vacationfulltime.create')->with('success',trans('message.fulltime_create'));
     }
 
 
@@ -83,6 +83,7 @@ class VacationFulltimeController extends Controller
         $employee = VacationFulltime::FindOrFail($id);
         $employee->date = $request->date;
         $employee->reason = $request->reason;
+        $employee->status = VacationFulltime::waitting;
         $employee->save();
         return redirect()->route('vacationfulltime.index')->with('success',trans('message.update'));
     }

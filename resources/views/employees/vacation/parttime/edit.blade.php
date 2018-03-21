@@ -4,7 +4,7 @@
     Vacation
     </h1>
     <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i>Parttime</a></li>
+    <li><a href="{{ route('vacationparttime.index') }}"><i class="fa fa-dashboard"></i>Parttime</a></li>
     <li class="active">Edit</li>
     </ol>
 @endsection

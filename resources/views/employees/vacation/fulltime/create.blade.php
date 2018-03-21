@@ -4,15 +4,13 @@
     Vacation
     </h1>
     <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i>Fulltime</a></li>
+    <li><a href="{{ route('vacationfulltime.index') }}"><i class="fa fa-dashboard"></i>Fulltime</a></li>
     <li class="active">Create</li>
     </ol>
 @endsection
 
 @section('content')
 <div class="container">
-	<h2 class="head"><a href="{{ route('vacationfulltime.index') }}" class="btn btn-info show-head"><span class="glyphicon glyphicon-list-alt"></span></a>Vacation Fulltime</h2>
-	<hr>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
