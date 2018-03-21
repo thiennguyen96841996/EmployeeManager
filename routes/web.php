@@ -34,7 +34,16 @@ Route::group(array("prefix"=>"employee","middleware"=>"auth"),function(){
 	]]);
 
     Route::get('attendsion/statistical', 'User\AttendsionController@statistical')->name('attendsion.statistical');
+    
     Route::resource('attendsion', 'User\AttendsionController',['only' =>[
         'index','store',
     ]]);
+
+    Route::resource('report', 'User\ReportController',['except' => [
+        'destroy'
+    ]]);
+
+    Route::get('overtime/statistical', 'User\OvertimeController@statistical')->name('overtime.statistical');
+
+    Route::resource('overtime', 'User\OvertimeController');
 });
