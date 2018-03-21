@@ -123,7 +123,7 @@
 			</span>
 		  </a>
 		  <ul class="treeview-menu">
-			<li><a href="#"><i class="fa fa-circle-o"></i> Attendsion</a></li>
+			<li><a href="{{ route('attendsion.statistical') }}"><i class="fa fa-circle-o"></i> Attendsion</a></li>
 			<li><a href="#"><i class="fa fa-circle-o"></i> OverTime</a></li>
 			<li><a href="#"><i class="fa fa-circle-o"></i> Report</a></li>
 			<li><a href="#"><i class="fa fa-circle-o"></i> Vacation FullTime</a></li>
@@ -144,8 +144,8 @@
 			<li><a href="#"><i class="fa fa-circle-o"></i>PartTime</a></li>
 		  </ul>
 		</li>
-		<li class="treeview">
-		  <a href="#">
+		<li>
+		  <a href="{{ route('attendsion.index') }}">
 			<i class="fa fa-files-o"></i>
 			<span>Attendsion</span>
 			<span class="pull-right-container">
