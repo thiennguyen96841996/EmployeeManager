@@ -32,4 +32,9 @@ Route::group(array("prefix"=>"employee","middleware"=>"auth"),function(){
 	Route::resource('profile', 'User\ProfileController', ['only' => [
     	'index', 'edit', 'update'
 	]]);
+
+    Route::get('attendsion/statistical', 'User\AttendsionController@statistical')->name('attendsion.statistical');
+    Route::resource('attendsion', 'User\AttendsionController',['only' =>[
+        'index','store',
+    ]]);
 });

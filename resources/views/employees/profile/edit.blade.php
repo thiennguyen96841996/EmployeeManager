@@ -37,7 +37,7 @@
 			  		</div>
 			  		<div class="form-group">
 			    		<label for="email">Email:</label>
-			    		<input type="email" class="form-control" name= "email" value="{{ $employee->email }}" disabled = "">
+			    		<input type="email" class="form-control" name= "email" value="{{ $employee->email }}" readonly = "">
 			  		</div>
 			  		<div class="form-group">
 						<input type="checkbox" name="changepassword" id="changepassword">
