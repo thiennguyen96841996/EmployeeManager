@@ -51,4 +51,6 @@ Route::group(array("prefix"=>"employee","middleware"=>"auth"),function(){
     );
 
     Route::resource('vacationparttime', 'User\VacationParttimeController', ['except' =>['show']]);
+  
+    Route::resource('employs','User\EmployeeController');
 });
