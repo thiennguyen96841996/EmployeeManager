@@ -46,4 +46,6 @@ Route::group(array("prefix"=>"employee","middleware"=>"auth"),function(){
     Route::get('overtime/statistical', 'User\OvertimeController@statistical')->name('overtime.statistical');
 
     Route::resource('overtime', 'User\OvertimeController');
+
+    Route::resource('employs','User\EmployeeController');
 });
