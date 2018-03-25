@@ -9,6 +9,7 @@ return [
     'access_fail' => 'Bạn không được quyền truy cập !',
     'add' => 'add success',
     'create' => 'Create success',
+    'fulltime_create' => 'Đã gửi mail cho xếp xin nghỉ',
     'update' => 'Update success',
     'delete' => 'Delete success',
     'delete_fail' => 'Bạn không có quyền để xóa!',

@@ -18,6 +18,7 @@ class CreateOvertimesTable extends Migration
             $table->date('date');
             $table->time('start_time');
             $table->time('end_time');
+            $table->string('hours');
             $table->text('content');
             $table->SoftDeletes();
             $table->integer('user_id');
