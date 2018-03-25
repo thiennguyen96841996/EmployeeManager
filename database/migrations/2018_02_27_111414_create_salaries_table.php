@@ -13,7 +13,7 @@ class CreateSalariesTable extends Migration
      */
     public function up()
     {
-        Schema::create('salarys', function (Blueprint $table) {
+        Schema::create('salaries', function (Blueprint $table) {
             $table->increments('id');
             $table->float('basic_salary');
             $table->float('overtime_salary');
